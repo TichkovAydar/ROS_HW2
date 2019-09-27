@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="irf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.502176062732561 0.304432383739315 0.524830178689127"
+        rpy="1 0 0" />
+      <mass
+        value="10.2333776403801" />
+      <inertia
+        ixx="0.643087900140225"
+        ixy="-0.0244671135641575"
+        ixz="0.00890353172303158"
+        iyy="0.161996225395883"
+        iyz="0.003367982370212"
+        izz="0.580069360092245" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/B.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/B.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="1L">
+    <inertial>
+      <origin
+        xyz="0.17876 -0.094949 0.098919 "
+        rpy="0 0 0" />
+      <mass
+        value="0.96286" />
+      <inertia
+        ixx="0.0025114"
+        ixy="-0.00099938"
+        ixz="-0.00029768"
+        iyy="0.0020287"
+        iyz="-0.00052712"
+        izz="0.0032283" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/1L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.49804 0.49804 0.49804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/1L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="01L"
+    type="continuous">
+    <origin
+      xyz="0.35042 -0.50866 0.31984"
+      rpy="0.78956 0.2634 -0.42471" />
+    <parent
+      link="base_link" />
+    <child
+      link="1L" />
+    <axis
+      xyz="0.8138 0.34202 0.46985" />
+  </joint>
+  <link
+    name="2L">
+    <inertial>
+      <origin
+        xyz="0.0610671559586513 0.00131082673955085 0.0300991436975365"
+        rpy="0 0 0" />
+      <mass
+        value="1.41046348706547" />
+      <inertia
+        ixx="0.00263871427644828"
+        ixy="-0.00177609796474435"
+        ixz="-0.000931608608887965"
+        iyy="0.00657269000378977"
+        iyz="-0.000326909486948074"
+        izz="0.00712417661854363" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/2L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/2L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="12L"
+    type="continuous">
+    <origin
+      xyz="0.20488 0.11189 0.14434"
+      rpy="-1.3437 -0.48353 2.2404" />
+    <parent
+      link="1L" />
+    <child
+      link="2L" />
+    <axis
+      xyz="0.10678 0.70672 -0.69939" />
+  </joint>
+  <link
+    name="3L">
+    <inertial>
+      <origin
+        xyz="0.0794326953657063 0.0337052003115771 0.00761927251994066"
+        rpy="0 0 0" />
+      <mass
+        value="0.71081197360719" />
+      <inertia
+        ixx="0.000777753985066241"
+        ixy="-0.00030017046309539"
+        ixz="0.000207915857631586"
+        iyy="0.00177390845724293"
+        iyz="-2.01028070204368E-05"
+        izz="0.00187540728250803" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/3L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/3L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="23L"
+    type="continuous">
+    <origin
+      xyz="0.13409 0.031233 0.050602"
+      rpy="1.4041 -0.068337 0.87651" />
+    <parent
+      link="2L" />
+    <child
+      link="3L" />
+    <axis
+      xyz="0.8138 0.34202 0.46985" />
+  </joint>
+  <link
+    name="4L">
+    <inertial>
+      <origin
+        xyz="0.0487175786160725 -0.0379553496481395 -0.00849162138805809"
+        rpy="0 0 0" />
+      <mass
+        value="1.18080238238893" />
+      <inertia
+        ixx="0.00281470286802051"
+        ixy="0.00103169232375255"
+        ixz="0.00177026712212969"
+        iyy="0.00508861026738946"
+        iyz="-0.000671792658889491"
+        izz="0.00430840753851078" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/4L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/4L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="34L"
+    type="continuous">
+    <origin
+      xyz="0.11095 0.011822 0.028884"
+      rpy="-0.058551 0.50311 -0.52682" />
+    <parent
+      link="3L" />
+    <child
+      link="4L" />
+    <axis
+      xyz="0.10678 0.70672 -0.69939" />
+  </joint>
+  <link
+    name="5L">
+    <inertial>
+      <origin
+        xyz="-0.00484504399848851 0.0190645129438887 -0.0212550847478335"
+        rpy="0 0 0" />
+      <mass
+        value="0.34341459827255" />
+      <inertia
+        ixx="0.000749983212050174"
+        ixy="4.91681285531932E-05"
+        ixz="0.000202909556820807"
+        iyy="0.000783208329444737"
+        iyz="-0.00017973579432526"
+        izz="0.000342234832386554" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/5L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/5L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="45L"
+    type="continuous">
+    <origin
+      xyz="0.15495 -0.11841 -0.095989"
+      rpy="1.8182 0.12991 -1.7527" />
+    <parent
+      link="4L" />
+    <child
+      link="5L" />
+    <axis
+      xyz="0.57125 -0.61933 -0.5386" />
+  </joint>
+  <link
+    name="6L">
+    <inertial>
+      <origin
+        xyz="0.00122748303581044 0.00533271364279952 0.0183461684270264"
+        rpy="0 0 0" />
+      <mass
+        value="0.465742953606289" />
+      <inertia
+        ixx="0.000473249513774246"
+        ixy="-1.62853799310458E-05"
+        ixz="-5.55895267916634E-06"
+        iyy="0.000461361316691347"
+        iyz="-2.61350248897393E-05"
+        izz="0.000526112973882426" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/6L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/6L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="56L"
+    type="continuous">
+    <origin
+      xyz="0.0074198 -0.041101 -0.040398"
+      rpy="3.5585E-05 0.30278 -0.29968" />
+    <parent
+      link="5L" />
+    <child
+      link="6L" />
+    <axis
+      xyz="0.10678 0.70672 -0.69939" />
+  </joint>
+  <link
+    name="7L">
+    <inertial>
+      <origin
+        xyz="0.0145775693291988 -0.0156460618417202 -0.0138382130240531"
+        rpy="0 0 0" />
+      <mass
+        value="0.0309416727783666" />
+      <inertia
+        ixx="7.84904034777635E-06"
+        ixy="-4.8155868393748E-07"
+        ixz="-3.50907507399572E-07"
+        iyy="7.93467015934158E-06"
+        iyz="4.76349856001657E-07"
+        izz="7.70969919351234E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/7L.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/7L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="67L"
+    type="continuous">
+    <origin
+      xyz="0.022079 0.0099413 0.011986"
+      rpy="-0.16152 0.20366 0.1503" />
+    <parent
+      link="6L" />
+    <child
+      link="7L" />
+    <axis
+      xyz="0.57125 -0.61933 -0.5386" />
+  </joint>
+  <link
+    name="1R">
+    <inertial>
+      <origin
+        xyz="0.0892426216382942 -0.0313991597368732 0.0776500879666361"
+        rpy="0 0 0" />
+      <mass
+        value="0.962860384395944" />
+      <inertia
+        ixx="0.00274804087062291"
+        ixy="0.000120189413897908"
+        ixz="-0.000957613309039732"
+        iyy="0.00330003664517256"
+        iyz="0.000394317607735221"
+        izz="0.00172040515705287" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/1R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/1R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="01R"
+    type="continuous">
+    <origin
+      xyz="0.43511 -0.55756 0.25939"
+      rpy="2.2247 -0.24632 -0.34724" />
+    <parent
+      link="base_link" />
+    <child
+      link="1R" />
+    <axis
+      xyz="0.8138 -0.34202 0.46985" />
+  </joint>
+  <link
+    name="2R">
+    <inertial>
+      <origin
+        xyz="0.0639734646923782 -0.0205402535292378 0.0110710477938457"
+        rpy="0 0 0" />
+      <mass
+        value="1.41050001295053" />
+      <inertia
+        ixx="0.00309512985211768"
+        ixy="0.000210941699954476"
+        ixz="-0.00233584646102904"
+        iyy="0.00729994112602356"
+        iyz="8.87953871166038E-05"
+        izz="0.00594070262330028" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/2R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/2R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="12R"
+    type="continuous">
+    <origin
+      xyz="0.12019 -0.076297 0.095446"
+      rpy="1.3853 -0.44056 -2.3146" />
+    <parent
+      link="1R" />
+    <child
+      link="2R" />
+    <axis
+      xyz="0.10678 -0.70672 -0.69939" />
+  </joint>
+  <link
+    name="3R">
+    <inertial>
+      <origin
+        xyz="0.19187953791313 -0.0252661213526117 0.127288216781991"
+        rpy="0 0 0" />
+      <mass
+        value="0.718728305997546" />
+      <inertia
+        ixx="0.000997607444940076"
+        ixy="-0.000354123951078335"
+        ixz="-0.000455083879843818"
+        iyy="0.00186482571853103"
+        iyz="-7.98803022506555E-05"
+        izz="0.00171992281835906" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/3R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/3R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="23R"
+    type="continuous">
+    <origin
+      xyz="0 0.01 0"
+      rpy="-1.3757 -0.053924 -0.86134" />
+    <parent
+      link="2R" />
+    <child
+      link="3R" />
+    <axis
+      xyz="0.8138 -0.34202 0.46985" />
+  </joint>
+  <link
+    name="4R">
+    <inertial>
+      <origin
+        xyz="0.0495012166566911 0.0327545973631917 -0.0136396384659776"
+        rpy="0 0 0" />
+      <mass
+        value="1.18078971547547" />
+      <inertia
+        ixx="0.00314259640231447"
+        ixy="-0.00201509751746896"
+        ixz="0.000618977643371215"
+        iyy="0.00374437526863278"
+        iyz="0.000520142060753119"
+        izz="0.00532486664251325" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/4R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/4R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="34R"
+    type="continuous">
+    <origin
+      xyz="0.23263 -0.058464 0.094592"
+      rpy="0.01936 0.39352 0.39696" />
+    <parent
+      link="3R" />
+    <child
+      link="4R" />
+    <axis
+      xyz="0.10678 -0.70672 -0.69939" />
+  </joint>
+  <link
+    name="5R">
+    <inertial>
+      <origin
+        xyz="0.00488374626444599 0.0372479727946735 0.00288674307481868"
+        rpy="0 0 0" />
+      <mass
+        value="0.343463913186024" />
+      <inertia
+        ixx="0.000794473004738307"
+        ixy="-0.000159186117708273"
+        ixz="2.29892510725062E-05"
+        iyy="0.000290565206072182"
+        iyz="0.000162386161214619"
+        izz="0.000790383611451605" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/5R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/5R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="45R"
+    type="continuous">
+    <origin
+      xyz="0.13312 0.11448 -0.061036"
+      rpy="-1.8973 0.24174 1.8253" />
+    <parent
+      link="4R" />
+    <child
+      link="5R" />
+    <axis
+      xyz="0.57125 0.61933 -0.5386" />
+  </joint>
+  <link
+    name="6R">
+    <inertial>
+      <origin
+        xyz="0.0032735044860861 -0.01888942269337 0.00470163918718081"
+        rpy="0 0 0" />
+      <mass
+        value="0.470288404060638" />
+      <inertia
+        ixx="0.00049290707372845"
+        ixy="-4.31107982365196E-06"
+        ixz="-1.65301927886305E-05"
+        iyy="0.000530176324429605"
+        iyz="1.71984150850287E-05"
+        izz="0.000467511912403378" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/6R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/6R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="56R"
+    type="continuous">
+    <origin
+      xyz="0.023092 0.058092 -0.055175"
+      rpy="-0.0096611 0.21444 0.21021" />
+    <parent
+      link="5R" />
+    <child
+      link="6R" />
+    <axis
+      xyz="0.10678 -0.70672 -0.69939" />
+  </joint>
+  <link
+    name="7R">
+    <inertial>
+      <origin
+        xyz="0.0179570405665738 0.019567071836283 -0.016842454279178"
+        rpy="0 0 0" />
+      <mass
+        value="0.0416752390294235" />
+      <inertia
+        ixx="1.04299712718312E-05"
+        ixy="1.02543472964922E-06"
+        ixz="-9.32459212099818E-07"
+        iyy="1.04727895116937E-05"
+        iyz="-1.04344206608285E-06"
+        izz="1.03158112883712E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/7R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://irf/meshes/7R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="67R"
+    type="continuous">
+    <origin
+      xyz="0.022079 -0.0099413 0.011986"
+      rpy="0.19164 0.24837 -0.17775" />
+    <parent
+      link="6R" />
+    <child
+      link="7R" />
+    <axis
+      xyz="0.57125 0.61933 -0.5386" />
+  </joint>
+</robot>
