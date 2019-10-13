@@ -31,7 +31,7 @@
       <material
         name="">
         <color
-          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
@@ -71,7 +71,7 @@
       <material
         name="">
         <color
-          rgba="0.49804 0.49804 0.49804 1" />
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
@@ -129,7 +129,7 @@
       <material
         name="">
         <color
-          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
@@ -187,7 +187,7 @@
       <material
         name="">
         <color
-          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
@@ -245,7 +245,7 @@
       <material
         name="">
         <color
-          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
@@ -303,7 +303,7 @@
       <material
         name="">
         <color
-          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
@@ -361,7 +361,7 @@
       <material
         name="">
         <color
-          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
@@ -419,7 +419,7 @@
       <material
         name="">
         <color
-          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
@@ -454,17 +454,17 @@
     name="1R">
     <inertial>
       <origin
-        xyz="0 0 0"
+        xyz="0.0639742893254454 -0.0205397001720959 0.0110720168670653"
         rpy="0 0 0" />
       <mass
-        value="0" />
+        value="0.926" />
       <inertia
-        ixx="0"
-        ixy="0"
-        ixz="0"
-        iyy="0"
-        iyz="0"
-        izz="0" />
+        ixx="0.0025114"
+        ixy="-0.00099938"
+        ixz="-0.00029768"
+        iyy="0.0020287"
+        iyz="-0.00052712"
+        izz="0.0032283" />
     </inertial>
     <visual>
       <origin
@@ -535,7 +535,7 @@
       <material
         name="">
         <color
-          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
@@ -593,7 +593,7 @@
       <material
         name="">
         <color
-          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
@@ -651,7 +651,7 @@
       <material
         name="">
         <color
-          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
@@ -709,7 +709,7 @@
       <material
         name="">
         <color
-          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
@@ -767,7 +767,7 @@
       <material
         name="">
         <color
-          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
@@ -825,7 +825,7 @@
       <material
         name="">
         <color
-          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
