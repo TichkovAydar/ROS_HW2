@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <launch>
-<param name="robot_description" textfile="$(find irf)/urdf/IRB14000.urdf" />
+<param name="robot_description" command="cat '$(find irf)/urdf/IRB14000.urdf'" />
 <include file="$(find gazebo_ros)/launch/empty_world.launch">
 </include>
-<node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" respawn="true" args="-param robot_description -urdf -model irf" />
+<node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -param robot_description -model irf" />
 </launch>
