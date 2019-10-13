@@ -31,11 +31,6 @@ Homework with ROS
   $ roslaunch irf display.launch model:=urdf/IRB14000.urdf
   
   
-5* Or you can try run it from home directiry
-
-
-  $ roslaunch irf display.launch model:='$(find irf)/urdf/IRF14000.urdf'
-  
   
 6. You can try to change scrools to be sure that robot's arm have a limits for revolute joints
 
@@ -43,13 +38,8 @@ Homework with ROS
 Gazebo Report
 
 
-In my case Gazebo refuze to start even with empty world. But you may try to start it
+
+  $ roslaunch irf main.launch
 
 
-  $ roslaunch gazebo_ros empty_world.launch
-  
-  
-  $ rosrun gazebo_ros spawn_model -urdf -file `rospack find irf`/urdf/IRB14000.urdf -model irf
-  
-  
-If you succesed please wrote it to me in Telegram @AydarNazarov
+If you have a problem please wrote it to me in Telegram @AydarNazarov
